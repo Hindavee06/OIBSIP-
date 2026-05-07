@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #1e1e1e;
+    font-family: Arial, sans-serif;
+}
+
+/* Calculator box */
+.calculator {
+    background: #2c2c2c;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* Display screen (FIXED TEXT VISIBILITY) */
+#screen {
+    width: 100%;
+    height: 60px;
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+
+    background: #111;        /* dark background */
+    color: #ffffff;          /* 🔥 bright text */
+    font-weight: bold;
+}
+
+/* Button grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    gap: 10px;
+    justify-content: center;
+}
+
+/* All buttons */
+button {
+    height: 60px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #444;
+    color: #fff;
+    transition: 0.2s;
+}
+
+/* Hover effect */
+button:hover {
+    background: #666;
+}
+
+/* Special buttons */
+.clear {
+    background: #ff4d4d;
+}
+
+.backspace {
+    background: #ff9933;
+}
+
+.equal {
+    background: #28a745;
+}
+
+/* Optional: active click effect */
+button:active {
+    transform: scale(0.95);
+}
